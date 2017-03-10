@@ -77,9 +77,13 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
 
+    'crispy_forms',
+
     'carts',
     'products',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 SITE_ID = 1
 
