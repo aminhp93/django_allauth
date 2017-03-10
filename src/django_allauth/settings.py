@@ -55,6 +55,12 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
     
 )
+
+ACCOUNT_AUTHENTICATION_METHOD = “username_email”
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 3
+
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
